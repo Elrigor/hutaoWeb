@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hu Tao</title>
+    <link rel="stylesheet" type="css/css" href="/home/robert/Web/hutaoproject/static/admin/css/styles.scss">
+
+</head>
+<body>
+    <h1>COMMANDS</h1>
+    
+    <div><p>LISTA DE COMANDOS</p></P></div>
+    {% for c in commands%}
+    <p>{{ c.name}} : {{ c.description}} <p> 
+    {% endfor %}
+  <script type="javascript/js" src="/home/robert/Web/hutaoproject/static/admin/js/bootstrap.min.js"></script>
+
+</body>
+</html>
