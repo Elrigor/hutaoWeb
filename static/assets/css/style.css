@@ -1,3 +1,6 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -109,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px 0;
 }
 #header.header-scrolled, #header.header-inner-pages {
-  background: rgb(42 38 37);
+  background: #2a2625;
   padding: 12px 0;
 }
 #header .logo {
@@ -185,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #fff;
+  color: #ffffff;
 }
 .navbar .getstarted, .navbar .getstarted:focus {
   padding: 8px 25px;
@@ -285,7 +288,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(28, 47, 65, 0.9);
+  background: #2a2625e0;
   transition: 0.3s;
   z-index: 999;
 }
@@ -299,10 +302,9 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 55px;
   right: 15px;
-  bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #2a2625;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -312,13 +314,13 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #2c4964;
+  color: #ffffff;
 }
 .navbar-mobile a:hover:before, .navbar-mobile li:hover > a:before, .navbar-mobile .active:before {
   visibility: hidden;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #5846f9;
+  color: #ffffff;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -389,7 +391,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero .btn-get-started:hover {
   background: #fff;
-  color: #5846f9;
+  color: #2a2625;
 }
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
@@ -502,6 +504,12 @@ section {
 .about {
   padding: 120px 0;
 }
+
+.img-about{
+  max-width: 80%;
+  height: auto;
+}
+
 .about .content h3 {
   font-weight: 600;
   font-size: 32px;
@@ -532,11 +540,11 @@ section {
   border-radius: 5px;
   transition: 0.5s;
   color: #fff;
-  background: linear-gradient(45deg, #5846f9 0%, #7b27d8 100%);
+  background: linear-gradient(45deg, rgb(60 52 52) 0%, rgb(118 14 14) 100%);
   position: relative;
 }
 .about .content .read-more:hover {
-  background: linear-gradient(180deg, #5846f9 0%, #7b27d8 100%);
+  background: linear-gradient(180deg, rgb(60 52 52) 0%, rgb(118 14 14) 100%);
 }
 .about .content .read-more i {
   font-size: 22px;
@@ -1275,7 +1283,7 @@ section {
 #footer {
   color: #fff;
   font-size: 14px;
-  background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url("../img/hero-bg.jpg") center center no-repeat;
+  background: linear-gradient(45deg, rgb(60 52 52) 0%, rgb(118 14 14) 100%), url("../img/hero-bg.jpg") center center no-repeat;
   background-size: cover;
 }
 #footer .footer-top {
@@ -1409,16 +1417,15 @@ section {
   text-decoration: none;
 }
 
-
 /*--------------------------------------------------------------
 # Scrollbar
 --------------------------------------------------------------*/
 
 body::-webkit-scrollbar {
-  width: 10px;               
+  width: 10px;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #2B2A28;    
+  background-color: #2B2A28;
   border-radius: 20px;
 }
 body {
@@ -1427,7 +1434,7 @@ body {
 
 /* Borrar lados blancos*/
 div.paoc-popup-modal{
-	background-color:#0000;
-	color:#0000;
-		box-shadow: 0 11px 15px -7px rgb(0 0 0 / 0%), 0 24px 38px 3px rgb(0 0 0 / 0%), 0 9px 46px 8px rgb(0 0 0 / 0%);
+    background-color:#0000;
+    color:#0000;
+        box-shadow: 0 11px 15px -7px rgb(0 0 0 / 0%), 0 24px 38px 3px rgb(0 0 0 / 0%), 0 9px 46px 8px rgb(0 0 0 / 0%);
 }
