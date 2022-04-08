@@ -1,0 +1,24 @@
+==============================
+        POR HACER
+==============================
+
+[ ] Agregar la lista de comandos
+[ ] Dejar bonita la página de comandos
+[ ] Estadísticas desde API REST
+
+[ ] Página 404
+[ ] Página 500
+
+
+
+==============================
+           IDEAS
+==============================
+
+[ ] En la página de comandos que el fantasma aparezca y desaparezca onclick
+
+==============================
+        POR ARREGLAR
+==============================
+
+[ ] El favicon no funciona en la página de comandos (y posiblemente en ninguna otra que no sea index)

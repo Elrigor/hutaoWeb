@@ -1,5 +1,6 @@
+from unicodedata import name
 from django.shortcuts import render
-from .models import Commands
+from .models import Command
 
 def index(request):    
     template = 'hutaoapp/index.html'
@@ -13,8 +14,12 @@ def notfound(request):
 
 def commands(request):    
     template = 'hutaoapp/commands.html'
-    commands = Commands.objects.all()
+    commandsMusica = Command.objects.all().filter(categoria__name="Musica")
+    commandsLista = Command.objects.all().filter(categoria__name="Lista")
+
     context = {
-        "commands" : commands,
+        "commandsMusica" : commandsMusica,
+        "commandsLista" : commandsLista,
+
         }
     return render(request, template, context)

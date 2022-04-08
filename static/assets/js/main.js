@@ -264,3 +264,21 @@
   });
 
 })()
+
+
+  /**
+   * Ghost animation
+   */
+
+   function wave() {
+    var arm = document.getElementById("ghost__arm__left");
+    arm.style.WebkitTransitionDuration='2s';
+  
+   arm.style.transform = "rotate(-20deg) translate(-10px, -60px)"; 
+  
+  
+        setTimeout(function () {
+          arm.style.transform = "rotate(-140deg) translate(-10px, -60px)"; 
+  
+      }, 1000);
+  }

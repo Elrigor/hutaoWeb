@@ -363,6 +363,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero .container, #hero .container-fluid {
   padding-top: 84px;
+  padding-bottom: 3%;
 }
 #hero h1 {
   margin: 0;
@@ -410,7 +411,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   #hero .animated {
     -webkit-animation: none;
-    animation: none;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;;
   }
   #hero .hero-img {
     text-align: center;
@@ -1438,3 +1439,285 @@ div.paoc-popup-modal{
     color:#0000;
         box-shadow: 0 11px 15px -7px rgb(0 0 0 / 0%), 0 24px 38px 3px rgb(0 0 0 / 0%), 0 9px 46px 8px rgb(0 0 0 / 0%);
 }
+
+/*--------------------------------------------------------------
+# Ghost
+--------------------------------------------------------------*/
+
+.ghost__container {
+  
+  display: flex;
+  margin: 0;
+  padding: 10%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.ghost {
+  animation-name: ghost__glow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  width: 240px;
+  transform: translateX(40px);
+  
+}
+
+.ghost__ears {
+  display: flex;
+  opacity: 0.0;
+  transition: 1s;
+  justify-content: space-between;
+
+}
+.ghost__ears .ear {
+  width: 0px;
+  height: 0px;
+  box-shadow: 0 0 20px 15px #ee7474;
+  background: #ee7474;
+  display: block;
+}
+
+
+.ghost__ears__left {
+  transform: translate(10px, 100px);
+  
+  border-radius: 100% 100%;
+}
+
+.ghost__ears__right {
+  transform:translate(-80px, 100px);
+  border-radius: 100% 100%;
+}
+
+.ghost__body {
+
+  width: 70%;
+  height: 350px;
+  background: #FEEDDC;
+  border-radius: 50%/40% 40% 60% 60%;
+ box-shadow: 0 0 20px 20px #FEEDDC;
+}
+
+
+.ghost__arm__left {
+  width: 10%;
+  height: 150px;
+  background: #FEEDDC;
+  border-radius: 50%/40% 40% 60% 60%;
+  background-color: #FEEDDC;
+  box-shadow: 0 0 10px 10px #FEEDDC;
+  
+  transform: rotate(-140deg) translate(-10px, -60px);
+
+  transition-duration: 2s;
+
+}
+
+.ghost__arm__right {
+  width: 10%;
+  height: 150px;
+  border: transparent;
+
+  background: #FEEDDC;
+  border-radius: 50%/40% 40% 60% 60% ;
+  background-color: #FEEDDC ;
+  box-shadow: 0 0 10px 10px #FEEDDC ;
+  
+  transform: translate(180px, -97px) rotate(140deg);
+
+  transition-duration: 2s;
+
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  transform:  translate(100px, 5px);
+  border-top: 20px solid #FEEDDC;
+}
+
+.ghost__head {
+  width: 100%;
+  height: 200px;
+  background: #FEEDDC;
+  border-radius: 50%/40%;
+  box-shadow: 0 0 20px 20px #FEEDDC;
+
+  transition-property: background, height;
+  transition-duration: 2s;
+}
+
+.ghost__mouth {
+  width: 50%;
+  height: 50px;
+  background: #E14F1A;
+  border-radius: 50%/40% 40% 60% 60%;  
+  transform:translate(42px, 60px);
+  transition-property: background, height;
+  transition-duration: 2s;
+}
+
+.ghost:hover > div {
+  opacity: 1;
+}
+.ghost__eyes {
+  display: flex;
+  justify-content: space-around;
+  
+  position: relative;
+  transform: translateY(40px);
+}
+
+.ghost__eyes .eye {
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-direction: alternate-reverse;
+  width: 50px;
+  background: #E14F1A;
+  height: 15px;
+  position: absolute;
+  
+}
+
+.ghost__eyes--left {
+  left: 15px;
+  transform: rotate(-30deg);
+  border-radius: 10%/20%;
+
+
+}
+
+.ghost__eyes--right {
+  right: 15px;
+  transform: rotate(30deg);
+  border-radius: 10%/20%;
+
+}
+
+.ghost__nose {
+  width: 80px;
+  background: #fff;
+  height: 100px;
+  margin: auto;
+  transform: translateY(80px);
+  border-radius: 50%/60% 60% 30% 30%;
+  position: relative;
+
+  animation-name: moveNose;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.ghost__nose--inner {
+  width: 50px;
+  height: 26px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%/40% 40% 60% 60%;
+}
+
+.ghost__nose--inner:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  border-radius: 50px;
+  transform: translate(-50%);
+  box-shadow: 20px 5px 0 #fff, -20px 5px 0 #fff;
+}
+
+.shadow {
+  animation-name: shadow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
+  width: 200px;
+  height: 30px;
+  margin: auto;
+  margin-top: -20px;
+  opacity: 0.6;
+  display: block;
+  border-radius: 100%;
+  filter: blur(17px);
+  transform: translateY(60px);
+
+
+}
+
+@keyframes updown {
+  100% {
+    transform: translateY(40px);
+  }
+}
+
+@keyframes blink {
+  100% {
+    height: 15px;
+  }
+  
+  0% {
+    height: 0px;
+  }
+}
+
+
+@keyframes ghost__glow {
+  100% {
+    opacity: 1;
+  }
+
+
+  0% {
+    opacity: 0.7;
+  }
+}
+
+
+
+@keyframes shadow {
+  100% {
+    width: 150px;
+  }
+
+  0% {
+    width: 200px;
+  }
+}
+
+
+
+
+/***********************-*/
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container-footer {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+
+

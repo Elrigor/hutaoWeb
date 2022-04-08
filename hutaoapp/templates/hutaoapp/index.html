@@ -1,6 +1,6 @@
 {% load static %}
  <!-- 
-──────▄▀▄─────▄▀▄
+──────▄▀▄─────▄▀▄ 
 ─────▄█░░▀▀▀▀▀░░█▄
 ─▄▄──█░░░░░░░░░░░█──▄▄
 █▄▄█─█░░▀░░┬░░▀░░█─█▄▄█
@@ -11,7 +11,7 @@ mEow r ü dOin' heRe?
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8">  
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Hu Tao - Discord Bot</title>
@@ -20,7 +20,6 @@ mEow r ü dOin' heRe?
 
   <!-- Favicons -->
   <link href="static/assets/img/favicon.png" rel="icon">
-  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -35,8 +34,6 @@ mEow r ü dOin' heRe?
 
   <!-- CSS -->
   <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
-
-
 </head>
 
 <body>
@@ -44,7 +41,7 @@ mEow r ü dOin' heRe?
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo"><a href="/">Hu Tao</a></h1>
+      <h1 class="logo fixed"><a href="/">Hu Tao</a></h1>
       <!-- Futuro logo -->
       <!-- <a href="/" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -70,12 +67,34 @@ mEow r ü dOin' heRe?
           <h2>Un bot de Discord multifunción</h2>
           <div><a href="#about" class="btn-get-started scrollto">Conóceme</a></div>
         </div>
-        <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
-          <img src="static/assets/img/hutao.png" class="img-fluid animated rounded-circle" alt="">
+        <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img " data-aos="zoom-in" data-aos-delay="150">
+
+
+          <div id="ghost__id" class="ghost__container img-fluid animated">
+            <div onclick="wave()" class="ghost">
+              <div class="ghost__ears">
+                <div class="ghost__ears__left ear"></div>
+                <div class="ghost__ears__right ear"></div>
+              </div>
+              <div class="ghost__body">
+                <div class="ghost__head">
+                <div class="ghost__eyes">
+                  <div class="ghost__eyes--left eye"></div>
+                  <div class="ghost__eyes--right eye"></div>
+                </div>
+                <div class="ghost__mouth"></div>                 
+                <div class="arrow-down"></div>
+                <div id= "ghost__arm__left" class="ghost__arm__left"></div>
+                <div class="ghost__arm__right"></div>                  
+              </div>
+              </div>
+            </div>
+          </div> 
+         <!--  <img src="static/assets/img/chib.png" class="img-fluid animated" alt="Hu Tao Chibi"> -->
         </div>
       </div>
     </div>
-
+ 
   </section><!-- Fin Hutao -->
 
   <main id="main">
@@ -86,7 +105,7 @@ mEow r ü dOin' heRe?
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
-            <img src="static/assets/img/hutao_about.png" class="img-about" alt="">
+            <a href="https://twitter.com/innyara_/status/1509861382476517377?s=20&t=eyCHrnJAPciMpCr26WyMWg" target="_blank"><img src="static/assets/img/chibi_hutao_opt.png" class="img-about" alt="Dibujo Chibi de Hu Tao realizado por @innyara_ en Twitter"></a>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
             <h3>Duis aute irure dolor</h3>
@@ -114,7 +133,7 @@ mEow r ü dOin' heRe?
       <div class="copyright-wrap d-md-flex py-4">
         <div class="me-md-auto text-center text-md-start">
           <div class="copyright">
-            &copy; Copyright <strong><span>Hu Tao</span></strong>. Todos los derechos reservados
+            &copy; Copyright 2022<strong><span> Hu Tao</span></strong>. Todos los derechos reservados
           </div>
         </div>
       </div>
