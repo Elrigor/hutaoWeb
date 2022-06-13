@@ -10,7 +10,7 @@
         <meta content="" name="keywords">
       
         <!-- Favicons -->
-        <link href="assets/img/favicon.png" rel="icon">
+        <link href="static/assets/img/favicon.png" rel="icon">
       
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -62,64 +62,64 @@
   
       <section class="inner-page">
         <div class="container about">
-            <h1>Música</h1>
+            <h1>🎶Música</h1>
+            <ul>
             {% for c in commandsMusica%}
-            <p>{{ c.name}} : {{ c.description}} <p> 
+              <li class="padding-list"><strong>{{ c.name }}</strong>: {{ c.description}}</li>
             {% endfor %}
-        
-            <h1>Lista</h1>
+            </ul>
+
+            <h1 class="top-padding-margin">📜Lista de tareas</h1>
+            <ul>
             {% for c in commandsLista%}
-            <p>{{ c.name}} : {{ c.description}} <p> 
+              <li class="padding-list"><strong>{{ c.name }}</strong>: {{ c.description}}</li>
             {% endfor %}
+            </ul>
+
+            <h1 class="top-padding-margin">🐷Fotos de animales</h1>
+            <ul>
+            {% for c in commandsAnimales%}
+              <li class="padding-list"><strong>{{ c.name }}</strong>: {{ c.description}}</li>
+            {% endfor %}
+            </ul>   
+
+            <h1 class="top-padding-margin">👻Personajes de Genshin Impact</h1>
+            <ul>
+            {% for c in commandsGenshin%}
+              <li class="padding-list"><strong>{{ c.name }}</strong>: {{ c.description}}</li>
+            {% endfor %}
+            </ul>  
+
+            <h1 class="top-padding-margin">🖼Fotos de perfil</h1>
+            <ul>
+            {% for c in commandsPerfil%}
+              <li class="padding-list"><strong>{{ c.name }}</strong>: {{ c.description}}</li>
+            {% endfor %}
+            </ul>   
+
+            <h1 class="top-padding-margin">💱Monedas</h1>
+            <ul>
+            {% for c in commandsMoneda%}
+              <li class="padding-list"><strong>{{ c.name }}</strong>: {{ c.description}}</li>
+            {% endfor %}
+            </ul>   
+
+            <h1 class="top-padding-margin">🎉Divertidos</h1>
+            <ul>
+            {% for c in commandsDivertidos%}
+              <li class="padding-list"><strong>{{ c.name }}</strong>: {{ c.description}}</li>
+            {% endfor %}
+            </ul>        
+
+            <h1 class="top-padding-margin">🔧Comandos útiles</h1>
+            <ul>
+            {% for c in commandsUtiles%}
+              <li class="padding-list"><strong>{{ c.name }}</strong>: {{ c.description}}</li>
+            {% endfor %}
+            </ul>     
         </div>
 
-        <div class="container about">
-          <h1>Música</h1>
-          {% for c in commandsMusica%}
-          <p>{{ c.name}} : {{ c.description}} <p> 
-          {% endfor %}
-      
-          <h1>Lista</h1>
-          {% for c in commandsLista%}
-          <p>{{ c.name}} : {{ c.description}} <p> 
-          {% endfor %}
-      </div>
-
-      <div class="container about">
-        <h1>Música</h1>
-        {% for c in commandsMusica%}
-        <p>{{ c.name}} : {{ c.description}} <p> 
-        {% endfor %}
-    
-        <h1>Lista</h1>
-        {% for c in commandsLista%}
-        <p>{{ c.name}} : {{ c.description}} <p> 
-        {% endfor %}
-    </div>
-
-    <div class="container about">
-      <h1>Música</h1>
-      {% for c in commandsMusica%}
-      <p>{{ c.name}} : {{ c.description}} <p> 
-      {% endfor %}
-  
-      <h1>Lista</h1>
-      {% for c in commandsLista%}
-      <p>{{ c.name}} : {{ c.description}} <p> 
-      {% endfor %}
-  </div>
-
-  <div class="container about">
-    <h1>Música</h1>
-    {% for c in commandsMusica%}
-    <p>{{ c.name}} : {{ c.description}} <p> 
-    {% endfor %}
-
-    <h1>Lista</h1>
-    {% for c in commandsLista%}
-    <p>{{ c.name}} : {{ c.description}} <p> 
-    {% endfor %}
-</div>
+        
       </section>
   
     </main><!-- End #main -->
@@ -140,8 +140,6 @@
   
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     <div id="preloader"></div>
-  
-
 
     <!-- Vendor JS Files -->
     <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
