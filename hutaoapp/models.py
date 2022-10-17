@@ -18,4 +18,3 @@ class Command(models.Model):
 
     def __str__(self):
         return "Comando: " + self.name        
-
